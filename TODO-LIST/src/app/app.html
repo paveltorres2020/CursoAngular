@@ -1,18 +1,8 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-    <p>Lista de Tareas </p>
-      <input type="text" value="Type here" />
+ <h1>Lista de Tareas </h1>
+ <div>
+  <input [(ngModel)]="desc" placeholder="ingrese la tarea"> 
+    
      <p></p> 
      <button (click)="eventoClick()">Ingresar</button>
      @for(tt of Tareas; track tt.id ){
@@ -23,9 +13,6 @@
         </li>
         </ul>
      }
-
-    </div>
-  </div>
-</main>
+</div>
 
 
