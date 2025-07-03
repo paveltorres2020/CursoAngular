@@ -17,7 +17,9 @@
      <button (click)="eventoClick()">Ingresar</button>
      @for(tt of Tareas; track tt.id ){
         <ul class="tasks">
-          <li>{{}}</li>
+          <li>{{tt.id}}</li>
+          <li>{{tt.descripcion}}</li>
+          <li><button (click)="eventoDelete()">Tarea Realizada</button>
         </li>
         </ul>
      }
