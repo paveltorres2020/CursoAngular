@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { Registros } from './registros/registros';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ export class App {
 
 eventoClick(){
    this.Tareas.push({id: this.Tareas.length +1, descripcion: this.desc});
+   
    this.desc = "";
 
 }

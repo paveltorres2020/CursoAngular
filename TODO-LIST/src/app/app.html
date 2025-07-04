@@ -7,8 +7,8 @@
      <button (click)="eventoClick()">Ingresar</button>
      @for(tt of Tareas; track tt.id ){
         <ul class="tasks">
-          <li>{{tt.id}}  {{tt.descripcion}}  <button (click)="eventoDelete(tt.id)">Tarea Realizada {{tt.id}}</button></li>
-        
+          
+         <app-registros [reg]="desc"></app-registros>
         </ul>
      }
 </div>
