@@ -20,8 +20,8 @@ eventoClick(){
 
 }
 eventoDelete(id:number){
-  //this.Tareas = this.Tareas.filter(desc => desc.id =! id)
-  this.Tareas.splice(id, 1)
+  this.Tareas = this.Tareas.filter(desc => desc.id !== id)
+  //this.Tareas.splice(id, 1)
 }
 
 }
