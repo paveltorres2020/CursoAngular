@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
   standalone: true
@@ -19,11 +20,11 @@ eventoClick(){
 
 }
 eventoDelete(id:number){
-  //this.Tareas = this.Tareas.filter(desc => desc.id =! id)
+  this.Tareas = this.Tareas.filter(desc => desc.id !== id)
+  //this.Tareas.splice(id, 1)
 }
 
 }
 export interface tarea{id:number, descripcion:string};
-
 
 
