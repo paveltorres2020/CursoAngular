@@ -1,18 +1,22 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { Unatarea } from './unatarea/unatarea';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FormsModule, Unatarea],
   templateUrl: './app.html',
   styleUrl: './app.css',
   standalone: true
 })
 export class App {
+
   protected title = 'TODO-LIST';
   Tareas: tarea[] = [];
   desc = "";
+
+
 
 eventoClick(){
    this.Tareas.push({id: this.Tareas.length +1, descripcion: this.desc});
